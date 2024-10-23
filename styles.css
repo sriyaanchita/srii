@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+#header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 10px,80px;
+    background:purple;
+    box-shadow: 0 5px 15px ;
+}
+#navbar
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#navbar li{
+    list-style:none;
+    padding: 0,15px;
+}
+#navbar li a{
+    text-decoration:none;
+    font-size:30px;
+    font-weight: 600;
+    color:black;
+    margin-left: 10px;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:crimson;
+}
+#navbar li a.active::after{
+    content:"";
+    width: 50px;
+    height: 2px;
+    background: crimson;
+    position:absolute;
+    bottom:-4px;
+    left: 20px;
+}
+#feature h2{
+    color: black;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+.products{ 
+    display:grid;
+    row-gap: 1em;
+    column-gap: 1em ;
+    grid-template-rows:repeat(1,3fr) ;
+    grid-template-columns:repeat(3,4fr);
+    gap: 10px;
+}
+
+
+
+
+    
+
+.row{
+    position:relative;
+    transition: all.40s;
+}
+.row img{
+
+    transition: all .40s;
+}
+.row img:hover{
+    transform:scale(0.9);
+}
+.product-text h5{
+    position:absolute;
+    top:13px;
+    left:13px;
+    color:white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: purple;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.hearticon{
+    position:absolute;
+    padding-right:250px ;
+    font-size: 20px;
+}
+.hearticon:hover{
+    color:red;
+}
+.ratting{
+    color:gold;
+    font-size: 18px;
+}
+.price h4{
+    color:black;
+    font-size:16px;
+    text-transform: 400;
+}
+#New h2{
+    color: black;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+img{
+    height:380px;
+    width:380px;
+}
+.pro{
+    display:grid;
+    row-gap: 1em;
+    column-gap: 1em ;
+    grid-template-rows:repeat(2,1fr) ;
+    grid-template-columns:repeat(3,1fr);
+    gap: 10px;
+}
+.row{
+    position: relative;
+    transition: all.40s;
+}
+.row img{
+    transition: all .40s;
+}
+.row img:hover{
+    transform:scale(0.9);
+}
+.product-text h5{
+    position:absolute;
+    top:13px;
+    left:13px;
+    color:white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: green;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.hearticon{
+    position:absolute;
+    right:0;
+    font-size: 20px;
+}
+.hearticon:hover{
+    color:red;
+}
+.ratting{
+    color:gold;
+    font-size: 18px;
+}
+.price h4{
+    color:black;
+    font-size:16px;
+    text-transform: 400;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+.container a{
+    color:purple;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 0 4px;
+}
+.container a:hover{
+    background-color: gold;
+    border-color: purple;
+}
+.container a.active{
+    background-color: gold;
+
+}
+.container a.disabled{
+    background-color: black;
+    color: wheat;
+    pointer-events: none;
+}
+.contact{
+    background-color: purple;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,auto));
+    gap:3rem;
+}
+.first-info img{
+    width: 140px;
+    height: auto;
+
+}
+.contact-info h4{
+    color:black;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-info p{
+    color: grey;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition:all.42s;
+}
+.contact-info p:hover{
+    color: red;     
+
+}
+.icons i{
+    color:grey;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all.42s;
+}
+.icons i:hover{
+    transform: scale(1.3);
+
+}
+.end{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
